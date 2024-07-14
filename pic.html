@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/franken-ui-releases@0.0.12/dist/default.min.css" />
+  <style>
+     .h-96 {
+         height: 28rem; /* 96 in tailwindcss is usually 24rem */
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: whitesmoke;
+         font-size: 40px;
+     }
+
+     .w-screen {
+         /* width: 100vw; */
+     }
+
+     .overlay {
+         position: relative;
+         background-image: url('img/baby.jpg');
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+     }
+
+     .overlay::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+        
+         /* width: 100%;/ */
+         /* height: 100%; */
+         color: whitesmoke;
+         font-weight: bolder;
+         background-color: rgba(0, 0, 0, 0.2); /* Adjust the rgba value to change the darkness level */
+     }
+ </style>
+         <body>
+          
+        
+    <header class=" md:w-full scrolled  z-20  " style="       background-color: #f8f9fa;">
+     <nav class="bg-transparent dark:bg-gray-900  w-full z-20 top-0 start-0 border-b text-white dark:border-gray-600 scrolled">
+       <a href="index.html">
+       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+           <span class="self-center text-2xl font-bold whitespace-nowrap text-black">Ascent<span class="text-green-400"> Homes</span></span>
+       </a>
+       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+           <button type="button" class="text-white  hover:bg-green-400 focus:outline-none bg-green-400 font-medium rounded-lg text-sm px-4 py-2 text-center  ">Get started</button>
+           <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden " aria-controls="navbar-sticky" aria-expanded="false">
+             <i class="ri-align-left text-2xl"></i>
+         </button>
+       </div>
+       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 text-white" id="navbar-sticky">
+         <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
+           <li>
+             <a href="index.html" class="block py-2 px-3 text-black rounded md:bg-transparent  md:p-0 " aria-current="page">Home</a>
+           </li>
+           <li>
+             <a href="about.html" class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+           </li>
+           <li>
+             <a href="blog.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+           </li>
+           <li>
+             <a href="contacts.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+           </li>
+         </ul>
+       </div>
+       </div>
+     </nav>
+     
+   </header>   
+   
+<!--  -->
+<div class="h-96  overlay">
+     <p class="text-white">AscentHomes Blog</p>
+</div>
+   <!--  -->
+   <div class="bg-black grid md:grid-cols-2 grid-cols-1 text-white">
+    <!-- Column 1 -->
+    <div>
+        <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:py-20 w-[70%]">
+            <div class="grid gap-5 lg:grid-cols-2 sm:max-w-sm sm:mx-auto lg:max-w-full">
+                <!-- Card 1 -->
+                <div class="transition-shadow duration-300 bg-white rounded shadow-sm relative">
+                    <div class="overlay">
+                        <img src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" class="object-cover w-full h-64" alt="" />
+                    </div>
+                    <div class="p-5 border border-t-0">
+                        <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+                            <a href="" class="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700" aria-label="Category" title="traveling">traveling</a>
+                            <span class="text-gray-600">— 28 Dec 2020</span>
+                        </p>
+                        <a href="" aria-label="Category" title="Visit the East" class="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700">Visit the East</a>
+                        <p class="mb-2 text-gray-700">
+                            Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque.
+                        </p>
+                        <a href="" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="transition-shadow duration-300 bg-white rounded shadow-sm relative">
+                    <div class="overlay">
+                        <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-64" alt="" />
+                    </div>
+                    <div class="p-5 border border-t-0">
+                        <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+                            <a href="" class="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700" aria-label="Category" title="traveling">traveling</a>
+                            <span class="text-gray-600">— 28 Dec 2020</span>
+                        </p>
+                        <a href="" aria-label="Category" title="Film It!" class="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700">Film It!</a>
+                        <p class="mb-2 text-gray-700">
+                            Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque.
+                        </p>
+                        <a href="" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Column 2 -->
+    <div class=" p-2">
+    <div>
+      <!-- dropdown -->
+       
+<button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="text-white bg-green-400 hover:bg-green-400 md:m-9 m-3 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center " type="button">Change currency <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg>
+  </button>
+  
+  <!-- Dropdown menu -->
+  <div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Naira</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dollars</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Pounds</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Euro</a>
+        </li>
+      </ul>
+  </div>
+  
+      <!-- ends -->
+    </div>
+    </div>
+</div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/franken-ui-releases@0.0.12/dist/franken-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

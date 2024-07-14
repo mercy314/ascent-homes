@@ -1,0 +1,569 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- flowbite -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/franken-ui-releases@0.0.12/dist/default.min.css"/>
+  <style>
+    /* header.scrolled{
+      background-color: #f8f9fa;
+      width: 100%;
+      transition: ease-in 0.3s;
+      color: white;
+    } */
+    .image-container {
+  position: relative;
+}
+.skl{
+  background-color: #f8f9fa;
+}
+
+.image-container {
+  overflow: hidden;
+  position: relative;
+  /* transition: transform 2s ease; */
+}
+
+.image-container:hover {
+  /* transform: scale(1.1); */
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  z-index: -1;
+  /* transition: transform 0.5s ease; */
+}
+
+.image-container:hover::before {
+  /* transform: scale(0.9); */
+}
+
+
+
+
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  /* transition: opacity 0.5s ease; */
+}
+
+.image-container:hover .content {
+  opacity: 1;
+}
+
+
+
+body{
+  font-family: 'Open Sans';
+}
+.big{
+  font-family:   "Poppins", sans-serif;
+}
+.ass{
+  width: 97%;
+}
+body{
+  font-family: "Poppins", sans-serif;
+}
+.header-scrolled {
+      background-color: #f8f9fa;
+      width: 100%;
+      transition: ease-in 0.3s;
+      color: white;
+    }
+
+    /* .image-container {
+      position: relative;
+      overflow: hidden;
+      transition: transform 2s ease;
+    } */
+
+    .image-container:hover {
+      transform: scale(1.1);
+    }
+
+    .image-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      z-index: -1;
+      transition: transform 0.5s ease;
+    }
+
+    .image-container:hover::before {
+      transform: scale(0.9);
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      transition: opacity 0.5s ease;
+      opacity: 0;
+      color: white;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .image-container:hover .content {
+      opacity: 1;
+    }
+
+    .features-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .features-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .features-list li i {
+      color: #4caf50;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body class="" >
+      
+    <div class=" w-full bg-no-repeat bg-cover bg-center h-[600px] " style="background-image: url(img/download.png);">
+      <header class=" md:w-full scrolled  z-20  " style="       background-color: #f8f9fa;">
+        <nav class="bg-transparent dark:bg-gray-900  w-full z-20 top-0 start-0 border-b text-white dark:border-gray-600 scrolled">
+          <a href="index.html">
+          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <span class="self-center text-2xl font-bold whitespace-nowrap text-black">Ascent<span class="text-green-400"> Homes</span></span>
+          </a>
+          <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <a href="blog.html">  <button type="button"
+              class="text-white hover:bg-green-400 focus:outline-none bg-green-400 font-medium rounded-lg text-sm px-4 py-2 text-center ">Get
+              started</button></a>
+              <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden " aria-controls="navbar-sticky" aria-expanded="false">
+                <i class="ri-align-left text-2xl"></i>
+            </button>
+          </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 text-white" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
+              <li>
+                <a href="index.html" class="block py-2 px-3 text-black rounded md:bg-transparent  md:p-0 " aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="about.html" class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+              </li>
+              <li>
+                <a href="blog.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Properties</a>
+              </li>
+              <li>
+                <a href="contacts.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </nav>
+        
+      </header>
+  
+  <div class="text-white pt-2 text-center ">
+    <p class="md:mt-52 text-xl font-semibold   tracking-widest">THE BEST WAY TO</p>
+    <p class="pt-2 font-bold tracking-widest text-6xl">Find Your Perfect Home</p>
+<!--    
+    <div class="mt-5">
+        <a
+          href=""
+          class="inline-flex items-center bg-blue-500 justify-center  h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+        >
+        View Details
+        </a>
+      </div> -->
+  </div>
+  <div class=" md:border-none ass p-2  md:mx-6 md:mt-44  md:p-5 grid h-fit md:grid-cols-4 grid-cols-2 flex-wrap gap-2 bg-gray-200 bottom-0 ">
+    <select name="Buy" id="" class="text-black border rounded-sm w-52 mr-6  md:w-80 text-center">Buy
+        <option value="" class="text-black  md:w-auto text-center">Buy</option>
+        <option value="" class="text-black">Rent</option>
+        <option value="" class="text-black">Sold</option>
+    </select>
+    <select name="Apartment" id="" class="text-black border rounded-sm w-48  text-center">Apartment
+        <option value="" class="text-black border rounded-sm text-center">Apartment</option>
+        <option value="" class="text-black border rounded-sm">Offices</option>
+        <option value="" class="text-black border rounded-sm">TownHome</option>
+        <option value="" class="text-black border rounded-sm">Studio</option>
+    </select>
+    <input type="search" name="search" id="" placeholder="search" class="md:ml-10 w-40 md:w-72 md:mr-3">
+    <div class="">
+      <a
+        href="blog.html"
+        class="inline-flex items-center bg-green-400 ml-1 md:ml-0 justify-center  h-12 px-2 md:px-9 w-40 md:w-80 font-medium tracking-wide text-white transition duration-200 rounded-sm shadow-md  bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+      >
+      Search  <i class="fa fa-search" aria-hidden="true"></i>
+      </a>
+    </div>
+</div>
+</div>
+
+
+
+<!--  -->
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+    <div>
+      <p class="inline-block px-3 py-px mb-4 text-md font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400 big">
+        Properties For Rent
+      </p>
+    </div>
+  
+    <p class="text-base text-gray-700 md:text-lg">
+      Search over 2000 properties to rent from the top agents in the country
+    </p>
+  </div>
+  <main class="mt-16">
+    <section class="container mx-auto px-6 py-12">
+      <div class="grid gap-5 row-gap-5 mb-8 lg:grid-cols-4 sm:grid-cols-2">
+        <div class="relative overflow-hidden  bg-white rounded shadow-sm image-container">
+          <img src="img/aboja-1.webp" class="object-cover w-full h-48" alt="">
+          <div class="content">
+            <h6 class="font-semibold">Our house in Abuja</h6>
+            <p>Price: $500,000</p>
+            <p>Location: Abuja</p>
+          </div>
+        </div>
+        <div class="relative overflow-hidden  bg-white rounded shadow-sm  image-container">
+          <img src="img/download (1).jpg" class="object-cover w-full h-48" alt="">
+          <div class="content">
+            <h6 class="font-semibold">Our house in Banana Island</h6>
+            <p>Price: $2,000,000</p>
+            <p>Location: Banana Island</p>
+          </div>
+        </div>
+        <div class="relative overflow-hidden  bg-white rounded shadow-sm  image-container">
+          <img src="img/bedroom2-4696556_1280.jpg" class="object-cover w-full h-48" alt="">
+          <div class="content">
+            <h6 class="font-semibold">Awesome Family Home</h6>
+            <p>Price: $750,000</p>
+            <p>Location: Lagos</p>
+          </div>
+        </div>
+        <div class="relative overflow-hidden transform bg-white rounded shadow-sm  image-container">
+          <img src="img/chairs1-2181968_1280.jpg" class="object-cover w-full h-48" alt="">
+          <div class="content">
+            <h6 class="font-semibold">Studio Bay View</h6>
+            <p>Price: $1,200,000</p>
+            <p>Location: Bay View</p>
+          </div>
+        </div>
+        <div class="relative overflow-hidden transform bg-white rounded shadow-sm  image-container">
+          <img src="img/dining1-room-3108037_1280.jpg" class="object-cover w-full h-48" alt="">
+          <div class="content">
+            <h6 class="font-semibold">Studio in Compton</h6>
+            <p>Price: $450,000</p>
+            <p>Location: Compton</p>
+          </div>
+        </div>
+        <div class="relative overflow-hidden transform bg-white rounded shadow-sm hover:-translate-y-2 image-container">
+          <img src="img/kitchen1-living-room-4043091_1280.jpg" class="object-cover w-full h-48" alt="">
+          <div class="content">
+            <h6 class="font-semibold">Studio in East Orange</h6>
+            <p>Price: $480,000</p>
+            <p>Location: East Orange</p>
+          </div>
+        </div>
+        <div class="relative overflow-hidden transform bg-white rounded shadow-sm hover:-translate-y-2 image-container">
+          <img src="img/home1-4720969_1280.jpg" class="object-cover w-full h-48" alt="">
+          <div class="content">
+            <h6 class="font-semibold">Studio in Homestead</h6>
+            <p>Price: $500,000</p>
+            <p>Location: Homestead</p>
+          </div>
+        </div>
+        <div class="relative overflow-hidden transform bg-white rounded shadow-sm hover:-translate-y-2 image-container">
+          <img src="img/real-estate-7132373_1280.jpg" class="object-cover w-full h-48" alt="">
+          <div class="content">
+            <h6 class="font-semibold">Studio in Los Angeles</h6>
+            <p>Price: $1,000,000</p>
+            <p>Location: Los Angeles</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="blog.html"
+          class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-green-400 hover:bg-green-500 focus:shadow-outline focus:outline-none">
+          View More
+        </a>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!--  -->
+<div class="h-fit  md:mt-16 text-center skl">
+  <p class="text-center text-4xl md:pt-6 font-bold big ">Explore Apartment Types</p>
+  <p class="text-center pt-2">Explore all the different types of apartments so you can choose the best option for you</p>
+
+        <div class=" m-10 p-3 gap-5 grid md:grid-cols-12">
+         
+          <!-- box1 -->
+          
+            <div class="md:col-span-9 "> 
+              <!-- 1A -->
+               <div class="grid md:grid-cols-12 gap-5 "> 
+                  <!--  -->
+                  <div class=" md:col-span-8 " >
+                    <img src="img/cat-4-1.jpg" alt="" class=" border rounded-md " data-aos="zoom-in">
+                  </div>
+                  <!--  -->
+                  <div class=" md:col-span-4">
+                    <img src="img/cat-1-1.jpg" alt="" class=" border rounded-md" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                  </div>
+              </div>
+              <!-- 1B -->
+              <div class="grid md:grid-cols-12 gap-5 my-5 mt-12 ">
+                 <!--  -->
+                  <div class=" md:col-span-4">
+                    <img src="img/cat-6-1.jpg" alt="" class=" border rounded-md" data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="100"
+                    data-aos-offset="0">
+                  </div>
+                  <!--  -->
+                  <div class=" md:col-span-8">
+                    <img src="img/cat-7-1.jpg" alt="" class=" border rounded-md" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">
+                  </div>
+              </div>
+            </div>
+          
+            <!--2  -->
+            <div class=" md:col-span-3 ">
+              <img src="img/cat-2-1-p41x427kj43ikmtcbyom6bnv2h33lxz230h0v65z1g.jpg" alt="" class="h-[95%]  border rounded-md"  data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom">
+            </div>
+          
+          </div>
+  
+
+</div>
+
+
+<!-- part -->
+
+ <!-- stop -->
+ <div class="h-fit" style="background-image: url('img/location_bg.jpg');">
+  <p class="px-20 pt-32 text-4xl font-bold big">Properties by States</p>
+  <div class="h-fit  md:m-20 m-3 text-black">
+    <!-- first part -->
+    <div class="grid md:grid-cols-2 grid-cols-1 md:m-4 gap-5 m-1  text-2xl text-center bottom-0 text-black">
+      <div class="relative  h-80 bg-cover image-container m-4" style="background-image: url('img/location-2.jpg');">
+        <div class="overlay"></div>
+        <div class="content">Abuja</div>
+      </div>
+      <div class="relative  h-80 bg-cover image-container  m-4" style="background-image: url('img/location-1.jpg');">
+        <div class="overlay"></div>
+        <div class="content">Lagos</div>
+      </div>
+    </div>
+    <!-- second part -->
+    <div class="grid md:grid-cols-3 grid-cols-1 m-4 md:gap-9 gap-5
+     text-black text-2xl text-center bottom-0">
+      <div class="relative h-72 bg-cover image-container" style="background-image: url('img/ibadon-1.webp');">
+        <div class="overlay"></div>
+        <div class="content">Ibadan</div>
+      </div>
+      <div class="relative h-72 bg-cover image-container" style="background-image: url('img/lagos.webp');">
+        <div class="overlay"></div>
+        <div class="content">Osun</div>
+      </div>
+      <div class="relative h-72 bg-cover image-container" style="background-image: url('img/location-1.jpg');">
+        <div class="overlay"></div>
+        <div class="content">Abeokta</div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- footer -->
+ <footer class="bg-white">
+  <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <div class="text-lg">
+       <p>Ascent Homes</p>
+      </div>
+
+      <ul class="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
+        <li>
+      
+            <span class="sr-only">Facebook</span>
+
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f  hover:text-green-300"></i></a>
+         
+        </li>
+
+        <li>
+         
+            <span class="sr-only">Instagram</span>
+         <a href=" https://www.instagram.com "><i class="fab fa-instagram  hover:text-green-300"></i></a>   
+        </li>
+
+        <li>
+          
+            <span class="sr-only">Twitter</span>
+
+       <a href="
+
+       https://twitter.com › flow › login"> <i class="fab fa-twitter  hover:text-green-300"></i></a>    
+
+          
+        </li>
+
+        <li>
+         
+            <span class="sr-only">GitHub</span>
+            <i class="fab fa-github  hover:text-green-300"></i>
+        </li>
+
+        <li>
+        
+            <span class="sr-only">Dribbble</span>
+
+            <i class="fab fa-dribbble  hover:bg-yellow-300"></i>
+         
+        </li>
+      </ul>
+    </div>
+
+    <div
+      class="grid grid-cols-2 gap-8 border-t border-gray-100 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16"
+    >
+      <div>
+        <p class="font-medium text-gray-900">Services</p>
+
+        <ul class="mt-6 space-y-4 text-sm">
+          <li>
+            <a href="#" class="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-gray-700 transition hover:opacity-75"> Company Review </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-medium text-gray-900">CONTACT INFO</p>
+       <ul class="mt-6 space-y-4 text-sm">
+        <li>
+        <a href="#" class="text-gray-700 transition hover:opacity-75">
+          Call-centre: 07059659531  </a>
+      </li>
+      <li>
+        <a href="#" class="text-gray-700 transition hover:opacity-75">
+          Fax:  07059659531
+          </a>
+      </li>
+      <li>
+        <a href="#" class="text-gray-700 transition hover:opacity-75">
+          Email: liyah.adebayo@gmail.com
+          </a>
+      </li>
+    </ul>
+      </p>
+      </div>
+
+      <div>
+        <p class="font-medium text-gray-900">REAL ESTATE MARKERS</p>
+
+        <ul class="mt-6 space-y-4 text-sm">
+          <li>
+            <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-gray-700 transition hover:opacity-75">Pricing Plans </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-gray-700 transition hover:opacity-75">About us </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-medium text-gray-900">INFORMATION</p>
+
+        <ul class="mt-6 space-y-4 text-sm">
+          <li>
+            <a href="#" class="text-gray-700 transition hover:opacity-75"> Apartment for Rent
+             
+              
+              </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-gray-700 transition hover:opacity-75">  Apartment Low to hide </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-gray-700 transition hover:opacity-75"> Offices for Buy </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-gray-700 transition hover:opacity-75">  Offices for Rent </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-xs text-gray-500">&copy; 2022. Ascent Homes. All rights reserved.</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/js/uikit.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+ <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>

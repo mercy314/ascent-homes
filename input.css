@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+     body {
+       @apply transition-colors duration-500;
+     }
+     .dark-mode {
+       @apply bg-black text-white;
+     }
+     .light-mode {
+       @apply bg-white text-black;
+     }
+     .video-background {
+    @apply  position: absolute  top: 0   left: 0  width: 100%  min-height: 70% height: 100%  object-fit: cover  z-index: -1     
+    }
+    .good{
+      @apply szssaasz uk-animation-scale-up uk-transform-origin-bottom-right
+    }
+    .counter {
+   @apply   font-size: 2rem  font-weight: bold
+     
+    }
+    .scrolled{
+      @apply bg-black  
+    }
+   }

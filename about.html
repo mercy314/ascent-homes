@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="./output.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+     <!-- flowbite -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/franken-ui-releases@0.0.12/dist/default.min.css"
+   />
+   <style>
+    big{
+      font-family: "Dancing Script", cursive;
+    }
+   </style>
+</head>
+<body>
+ 
+    <header class=" md:w-full scrolled  z-20  " style="       background-color: #f8f9fa;">
+      <nav class="bg-transparent dark:bg-gray-900  w-full z-20 top-0 start-0 border-b text-white dark:border-gray-600 scrolled">
+        <a href="index.html">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <span class="self-center text-2xl font-bold whitespace-nowrap text-black">Ascent<span class="text-green-400"> Homes</span></span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <a href="blog.html">  <button type="button"
+            class="text-white hover:bg-green-400 focus:outline-none bg-green-400 font-medium rounded-lg text-sm px-4 py-2 text-center ">Get
+            started</button></a>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden " aria-controls="navbar-sticky" aria-expanded="false">
+              <i class="ri-align-left text-2xl"></i>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 text-white" id="navbar-sticky">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
+            <li>
+              <a href="index.html" class="block py-2 px-3 text-black rounded md:bg-transparent  md:p-0 " aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <li>
+              <a href="blog.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Properties</a>
+            </li>
+            <li>
+              <a href="contacts.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+      
+    </header>
+        <!--  -->
+        
+     <div  class="h-48 bg-cover " style="background-image: url(img/photo-1470219556762-1771e7f9427d@2x-1536x256.png);">
+          <p class="text-center text-white pt-16 text-2xl">About us</p>
+     </div>
+     <div class=""> 
+          <p class="pt-24 text-2xl mx-12 big">Our story </p>
+          <div class="flex md:m-12 m-6 md:p-10 flex-col md:flex-row gap-6">
+          <div>Welcome to Ascent Homes, where dreams of exquisite living spaces come to life. Our journey began with a simple yet profound vision: to redefine the real estate landscape by creating homes that blend luxury, comfort, and sustainability.</div>
+          <div>At Ascent Homes, we believe that a home is more than just a structure; it’s a sanctuary where memories are made and cherished. This philosophy drives every aspect of our work. From the initial design phase to the final touches, we focus on quality, innovation, and attention to detail. Our homes are a testament to timeless design and modern convenience, ensuring they remain as beautiful and functional decades from now as they are today.</div>
+     </div>
+     </div>
+     <!-- blog -->
+     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-gray-100">
+          <p class="m-5 text-3xl">Our Values</p>
+          <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full md:m-6">
+            <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+              <img src="img/welcom.jpg" class="object-cover w-full h-64" alt="" />
+              <div class="p-5 border border-t-0">
+                <p class="mb-3 text-md font-semibold tracking-wide uppercase">
+                Quality
+                <p class="mb-2 text-gray-700">
+                  Choosing Ascent homes means choosing a partner who values quality above all else. We invite you to experience the difference that our commitment to excellence can make in your real estate journey. Trust us to provide the quality service you deserve and to help you achieve your real estate goals with confidence.
+                </p>
+               
+              </div>
+            </div>
+            <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+              <img src="img/woman.jpg" class="object-cover w-full h-64" alt="" />
+              <div class="p-5 ">
+                <p class="mb-3 text-md font-semibold tracking-wide uppercase">
+                    Teamwork
+                </p>
+               
+                <p class="mb-2 text-gray-700">
+                  Our team shares a common vision: to provide outstanding real estate services that exceed client expectations. Each member, from agents to support staff, is committed to this goal, ensuring a seamless experience for our clients
+                </p>
+                
+              </div>
+            </div>
+            <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+              <img src="img/guy.jpg" class="object-cover w-full h-64" alt="" />
+              <div class="p-5">
+                <p class="mb-3 text-md font-semibold tracking-wide uppercase">
+                    Respect
+                 
+                </p>
+               
+                <p class="mb-2 text-gray-700">
+                  We value our clients and treat each one with the utmost respect. We listen carefully to your needs, preferences, and concerns, ensuring that we fully understand your goals. Our respectful approach fosters a collaborative and supportive environment, making your real estate journey smooth and enjoyable.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- stop -->
+       <!-- services -->
+       <div class="px-4 py-16  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 m-12">
+          <p class="my-7 text-3xl">Services</p>
+          <div class="grid gap-8 row-gap-5 sm:row-gap-8 sm:grid-cols-2 lg:grid-cols-3 p-5">
+            <div>
+              <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full">
+                <img src="img/people.webp" alt="">
+              </div>
+              <h6 class="mb-2 font-semibold leading-5">Property Management</h6>
+              <p class="mb-3 text-sm text-gray-900">
+                At Ascent Homes, we understand that owning a property is a significant investment, and managing it effectively is crucial to maximizing its value and ensuring your peace of mind. Our comprehensive property management services are designed to take the hassle out of property ownership, allowing you to enjoy the benefits without the stress.
+              </p>
+              <a href="" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200  hover:text-deep-purple-800 text-green-400">Learn more</a>
+            </div>
+            <div>
+              <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full ">
+                <img src="img/shacking-hands.webp" alt="">
+              </div>
+              <h6 class="mb-2 font-semibold leading-5">Capital Improvements</h6>
+              <p class="mb-3 text-sm text-gray-900">
+                At Ascent Homes, we understand that maintaining and enhancing the value of your property requires more than just routine maintenance. Strategic capital improvements are essential for ensuring your property remains competitive, attractive, and up-to-date. Our dedicated team of experts is here to guide you through the process of planning and executing capital improvements that will significantly increase the value and appeal of your investment.
+              </p>
+              <a href="" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 text-green-400">Learn more</a>
+            </div>
+            <div>
+              <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full ">
+              <img src="img/bar-chart-stats-up.webp" alt="">
+              </div>
+              <h6 class="mb-2 font-semibold leading-5">Financial Reporting</h6>
+              <p class="mb-3 text-sm text-gray-900">
+                At Ascent Homes, we recognize that transparent, accurate, and timely financial reporting is crucial for effective property management and investment decision-making. Our comprehensive financial reporting services provide property owners and investors with clear insights into their property's financial performance, enabling informed decisions and strategic planning.
+              </p>
+              <a href="" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 text-green-400">Learn more</a>
+            </div>
+            <div>
+              <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full ">
+                <img src="img/bar-chart-board.webp" alt="">
+              </div>
+              <h6 class="mb-2 font-semibold leading-5">Business Development</h6>
+              <p class="mb-3 text-sm text-gray-900">
+               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+              </p>
+              <a href="" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 text-green-400">Learn more</a>
+            </div>
+            <div>
+              <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full ">
+                <img src="img/donut-chart-1.webp" alt="">
+              </div>
+              <h6 class="mb-2 font-semibold leading-5">Finance Real Estate</h6>
+              <p class="mb-3 text-sm text-gray-900">
+                Rough pomfret lemon shark plownose chimaera southern sandfish kokanee northern sea.
+              </p>
+              <a href="" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 text-green-400">Learn more</a>
+            </div>
+            <div>
+              <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full ">
+                <img src="img/balance (1).webp" alt="">
+              </div>
+              <h6 class="mb-2 font-semibold leading-5">Recover Asset Value</h6>
+              <p class="mb-3 text-sm text-gray-900">
+               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+              </p>
+              <a href="" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 text-green-400">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <!-- stop -->
+         <!--  -->
+        <!-- team start -->
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-gray-100">
+     <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12 ">
+          <a href="team"></a>
+       <div>
+         <p class="inline-block px-3 py-px mb-4 text-md font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+           Core Team
+         </p>
+       </div>
+       <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+         
+          
+           <span class="relative">Welcome</span>
+         </span>
+         our talented team of professionals
+       </h2>
+     
+     </div>
+     <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+       <div>
+         <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+           <img class="object-cover w-full h-56 md:h-64 xl:h-80" src="img/portrait-4568762_1280.jpg" alt="Person" />
+           <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+             <p class="mb-1 text-lg font-bold text-gray-100">Oliver Aguilerra</p>
+             <p class="mb-4 text-xs text-gray-100">Co-Founder and Executive Chairman</p>
+             <p class="mb-4 text-xs tracking-wide text-gray-400">
+               Mobile: (866) 234-5678 <br>
+
+                 Office: (879) 822-3301 <br>
+
+                 Fax: (879) 823-3302
+             </p>
+             <div class="flex items-center justify-center space-x-3">
+               <i class="fab fa-twitter text-white"></i>
+               <i class="fa-brands fa-facebook-f text-white"></i>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div>
+         <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+           <img class="object-cover w-full h-56 md:h-64 xl:h-80" src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+           <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+             <p class="mb-1 text-lg font-bold text-gray-100">Marta Clermont</p>
+             <p class="mb-4 text-xs text-gray-100">Design Team Lead</p>
+             <p class="mb-4 text-xs tracking-wide text-gray-400">
+               Mobile: (866) 234-5678 <br>
+
+               Office: (879) 822-3301 <br>
+               
+               Fax: (879) 822-3302
+             </p>
+             <div class="flex items-center justify-center space-x-3">
+               <i class="fab fa-twitter text-white"></i>
+             
+             
+               <i class="fa-brands fa-facebook-f text-white"></i>
+             
+             </div>
+           </div>
+         </div>
+       </div>
+       <div>
+         <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+           <img class="object-cover w-full h-56 md:h-64 xl:h-80" src="img/black-professional-4334648_1280.jpg" alt="Person" />
+           <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+             <p class="mb-1 text-lg font-bold text-gray-100">Anthony Geek</p>
+             <p class="mb-4 text-xs text-gray-100">Senior Vice President, Product</p>
+             <p class="mb-4 text-xs tracking-wide text-gray-400">
+               Mobile: (866) 123-4567 <br>
+
+               Office: (879) 711-2290 <br>
+               
+               Fax: (879) 712-2291
+             </p>
+             <div class="flex items-center justify-center space-x-3">
+               <i class="fab fa-twitter text-white"></i>
+
+               <i class="fa-brands fa-facebook-f text-white"></i>
+
+             </div>
+           </div>
+         </div>
+       </div>
+       <div>
+         <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+           <img class="object-cover w-full h-56 md:h-64 xl:h-80" src="img/business-696076_1280.jpg" alt="Person" />
+           <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+             <p class="mb-1 text-lg font-bold text-gray-100">Alice Melbourne</p>
+             <p class="mb-4 text-xs text-gray-100">Chief Legal Officer</p>
+             <p class="mb-4 text-xs tracking-wide text-gray-400">
+               Mobile: (866) 234-5678 <br>
+
+               Office: (879) 822-3301 <br>
+               
+               Fax: (879) 822-3302
+             </p>
+             <div class="flex items-center justify-center space-x-3">
+               <i class="fab fa-twitter text-white"></i>
+
+               <i class="fa-brands fa-facebook-f text-white"></i>
+
+             </div>
+           </div>
+         </div>
+       </div>
+       <div>
+        
+       </div>
+     </div>
+   </div>
+<!-- end -->
+        <!--  testimonial-->
+            
+
+
+      
+ 
+        <footer class="bg-white">
+          <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+              <div class="text-lg">
+               <p>Ascent Homes</p>
+              </div>
+        
+              <ul class="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
+                <li>
+              
+                    <span class="sr-only">Facebook</span>
+        
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f  hover:text-green-300"></i></a>
+                 
+                </li>
+        
+                <li>
+                 
+                    <span class="sr-only">Instagram</span>
+                 <a href=" https://www.instagram.com "><i class="fab fa-instagram  hover:text-green-300"></i></a>   
+                </li>
+        
+                <li>
+                  
+                    <span class="sr-only">Twitter</span>
+        
+               <a href="
+        
+               https://twitter.com › flow › login"> <i class="fab fa-twitter  hover:text-green-300"></i></a>    
+        
+                  
+                </li>
+        
+                <li>
+                 
+                    <span class="sr-only">GitHub</span>
+                    <i class="fab fa-github  hover:text-green-300"></i>
+                </li>
+        
+                <li>
+                
+                    <span class="sr-only">Dribbble</span>
+        
+                    <i class="fab fa-dribbble  hover:bg-yellow-300"></i>
+                 
+                </li>
+              </ul>
+            </div>
+        
+            <div
+              class="grid grid-cols-2 gap-8 border-t border-gray-100 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16"
+            >
+              <div>
+                <p class="font-medium text-gray-900">Services</p>
+        
+                <ul class="mt-6 space-y-4 text-sm">
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
+                  </li>
+        
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> Company Review </a>
+                  </li>
+        
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+                  </li>
+        
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
+                  </li>
+        
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
+                  </li>
+                </ul>
+              </div>
+        
+              <div>
+                <p class="font-medium text-gray-900">CONTACT INFO</p>
+               <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Call-centre: 07059659531  </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Fax:  07059659531
+                  </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                  Email: liyah.adebayo@gmail.com
+                  </a>
+              </li>
+            </ul>
+              </p>
+              </div>
+        
+              <div>
+                <p class="font-medium text-gray-900">REAL ESTATE MARKERS</p>
+        
+                <ul class="mt-6 space-y-4 text-sm">
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact </a>
+                  </li>
+        
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75">Pricing Plans </a>
+                  </li>
+        
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75">About us </a>
+                  </li>
+                </ul>
+              </div>
+        
+              <div>
+                <p class="font-medium text-gray-900">INFORMATION</p>
+        
+                <ul class="mt-6 space-y-4 text-sm">
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> Apartment for Rent
+                     
+                      
+                      </a>
+                  </li>
+        
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75">  Apartment Low to hide </a>
+                  </li>
+        
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> Offices for Buy </a>
+                  </li>
+        
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75">  Offices for Rent </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        
+            <p class="text-xs text-gray-500">&copy; 2022. Ascent Homes. All rights reserved.</p>
+          </div>
+        </footer>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,605 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- flowbite -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/franken-ui-releases@0.0.12/dist/default.min.css" />
+  <style>
+    header.scrolled {
+      background-color: #f8f9fa;
+      width: 100%;
+      transition: ease-in 0.3s;
+      color: white;
+    }
+    .group-hover .absolute {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.group:hover .absolute {
+    opacity: 1;
+}
+    .image-container {
+      position: relative;
+    }
+
+    .skl {
+      background-color: #f8f9fa;
+    }
+
+    .image-container {
+      overflow: hidden;
+      position: relative;
+      transition: transform 2s ease;
+    }
+
+    .image-container:hover {
+      transform: scale(1.1);
+    }
+
+    .image-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      z-index: -1;
+      transition: transform 0.5s ease;
+    }
+
+    .image-container:hover::before {
+      transform: scale(0.9);
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      transition: opacity 0.5s ease;
+    }
+
+    .image-container:hover .content {
+      opacity: 1;
+    }
+
+    body {
+      font-family: 'Open Sans';
+    }
+
+    .big {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .ass {
+      width: 97%;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="">
+  <div class="w-full bg-no-repeat bg-cover bg-center h-[600px]" style="background-image: url(img/big\ \(3\).png);">
+    <header class="md:w-full scrolled z-20 fixed">
+      <nav class="bg-transparent dark:bg-gray-900 w-full z-20 top-0 start-0 border-b text-white dark:border-gray-600 scrolled">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <span class="self-center text-2xl font-bold whitespace-nowrap text-black pr-3">Ascent<span class="text-green-400"> Homes</span></span>
+          <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <a href="blog.html">  <button type="button"
+            class="text-white hover:bg-green-400 focus:outline-none bg-green-400 font-medium rounded-lg text-sm px-4 py-2 text-center ">Get
+            started</button></a>
+            <button data-collapse-toggle="navbar-sticky" type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden"
+              aria-controls="navbar-sticky" aria-expanded="false">
+              <i class="ri-align-left text-2xl"></i>
+            </button>
+          </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 text-white" id="navbar-sticky">
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
+              <li>
+                <a href="index.html" class="block py-2 px-3 text-black rounded md:bg-transparent md:p-0"
+                  aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="about.html"
+                  class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+              </li>
+              <li>
+                <a href="blog.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Properties</a>
+              </li>
+              <li>
+                <a href="contacts.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="text-white pt-2 text-center ">
+      <p class="mt-52  font-semibold tracking-widest text-6xl">Properties</p>
+      <!-- <p class="pt-2 font-bold tracking-widest text-6xl">Properties -->
+    </div>
+    <div class="md:border-none ass p-2 md:mx-6 md:mt-44 md:p-5 grid h-fit md:grid-cols-4 grid-cols-2 flex-wrap gap-2 bg-gray-200 bottom-0 ">
+      <select name="Buy" id="" class="text-black border rounded-sm w-52 mr-6 md:w-80 text-center">Buy
+        <option value="" class="text-black  md:w-auto text-center">Buy</option>
+        <option value="" class="text-black">Rent</option>
+        <option value="" class="text-black">Sold</option>
+      </select>
+      <select name="Apartment" id="" class="text-black border rounded-sm w-48 text-center">Apartment
+        <option value="" class="text-black border rounded-sm text-center">Apartment</option>
+        <option value="" class="text-black border rounded-sm">Offices</option>
+        <option value="" class="text-black border rounded-sm">TownHome</option>
+        <option value="" class="text-black border rounded-sm">Studio</option>
+      </select>
+      <input type="search" name="search" id="" placeholder="search" class="md:ml-10 w-40 md:w-72 md:mr-3">
+      <div class="">
+        <a href=""
+          class="inline-flex items-center bg-green-400 ml-1 md:ml-0 justify-center h-12 px-2 md:px-9 w-40 md:w-80 font-medium tracking-wide text-white transition duration-200 rounded-sm shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">
+          Search <i class="fa fa-search" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Properties For Rent -->
+  <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+      <div>
+        <p
+          class="inline-block px-3 py-px mb-4 text-md font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400 big">
+          Properties For Rent
+        </p>
+      </div>
+
+      <p class="text-base text-gray-700 md:text-lg">
+        Search over 2000 properties to rent from the top agents in the country
+      </p>
+    </div>
+    <div class="grid gap-5 row-gap-5 mb-8 lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2">
+      <div class="duration-300 transform shadow-md bg-white hover:-translate-y-2">
+        <div class="flex flex-wrap gap-3 justify-between px-5 py-4 border-b h-fit bg-gray-200">
+          <p
+            class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-green-900 uppercase rounded-full bg-teal-accent-400 big">
+            Apartment
+          </p>
+          <p class="px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-800 uppercase big bg-gray-50">$1400/m
+          </p>
+        </div>
+        <div class="p-5 h-fit">
+          <div class="image-container h-fit">
+            <img src="img/download.png" alt="" class="object-cover w-full mb-6 h-56 rounded shadow-lg lg:h-60 xl:h-80" />
+          </div>
+          <div class="flex flex-wrap h-fit">
+            <p class="inline-block text-lg font-bold">123 Main St, Cityville, ST 12345</p>
+          </div>
+          <p class="text-gray-700 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ut
+            necessitatibus
+            ab suscipit voluptate architecto molestiae.</p>
+          <div class="flex items-center space-x-2">
+            <a href=""
+              class="inline-flex items-center justify-center h-10 px-5 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">View
+              Details <i class="ri-external-link-line ml-3"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="duration-300 transform bg-white  shadow-md hover:-translate-y-2">
+          <div class="flex flex-wrap gap-3 justify-between px-5 py-4 border-b h-fit bg-gray-200">
+            <p
+              class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-green-900 uppercase rounded-full bg-teal-accent-400 big">
+              Apartment
+            </p>
+            <p class="px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-800 uppercase big bg-gray-50">$1400/m
+            </p>
+          </div>
+          <div class="p-5 h-fit">
+            <div class="image-container h-fit">
+              <img src="img/WhatsApp .jpg" alt="" class="object-cover w-full mb-6 h-56 rounded shadow-lg lg:h-60 xl:h-80" />
+            </div>
+            <div class="flex flex-wrap h-fit">
+              <p class="inline-block text-lg font-bold">123 Main St, Cityville, ST 12345</p>
+            </div>
+            <p class="text-gray-700 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ut
+              necessitatibus
+              ab suscipit voluptate architecto molestiae.</p>
+            <div class="flex items-center space-x-2">
+              <a href=""
+                class="inline-flex items-center justify-center h-10 px-5 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">View
+                Details <i class="ri-external-link-line ml-3"></i></a>
+            </div>
+          </div>
+        </div>
+      <div class="duration-300 transform bg-white shadow-md hover:-translate-y-2">
+        <div class="flex flex-wrap gap-3 justify-between px-5 py-4 border-b h-fit bg-gray-200">
+          <p
+            class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-green-900 uppercase rounded-full bg-teal-accent-400 big">
+            Apartment
+          </p>
+          <p class="px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-800 uppercase big bg-gray-50">$1400/m
+          </p>
+        </div>
+        <div class="p-5 h-fit">
+          <div class="image-container h-fit">
+            <img src="img/WhatsApp Image 2024-06-20 at 17.16.59_87a86ec2.jpg" alt="" class="object-cover w-full mb-6 h-56 rounded shadow-lg lg:h-60 xl:h-80" />
+          </div>
+          <div class="flex flex-wrap h-fit">
+            <p class="inline-block text-lg font-bold">123 Main St, Cityville, ST 12345</p>
+          </div>
+          <p class="text-gray-700 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ut
+            necessitatibus
+            ab suscipit voluptate architecto molestiae.</p>
+          <div class="flex items-center space-x-2">
+            <a href=""
+              class="inline-flex items-center justify-center h-10 px-5 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">View
+              Details <i class="ri-external-link-line ml-3"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- part -->
+<section class="mt-14 m-6">
+  <div>
+      <div>
+          <p class="text-center text-3xl font-bold">Properties in Various Cities</p>
+      </div>
+      <div>
+          <p class="text-center font-light mt-4 pb-9">Who are in extremely love with eco friendly system.</p>
+      </div>
+     <div class="grid md:grid-cols-3 grid-cols-1  gap-6">
+      <div class="relative"><img src="img/eco-1-1.jpg" alt="">
+          <div class="absolute  bottom-0 text-white">
+              <div class="ml-10  font-semibold text-[1.3rem]">
+                  <p>$35.000</p>
+              </div>
+              <div class=" ml-10">
+                  <p class="font-light ">Colourful Little Apartment</p>
+              </div>
+              <div class="flex gap-4 ml-10 mb-4">
+                  <p class="border-r pr-4">2BD</p>
+                  <p class="border-r pr-4">2BA</p>
+                  <p>930SF</p>
+              </div>
+          </div>
+      </div>
+      <div class="relative"><img src="img/eco-2.jpg" alt="">
+            <div class="absolute  bottom-0 text-white">
+              <div class="ml-10  font-semibold text-[1.3rem]">
+                  <p>$35.000</p>
+              </div>
+              <div class=" ml-10">
+                  <p class="font-light ">Colourful Little Apartment</p>
+              </div>
+              <div class="flex gap-4 ml-10 mb-4">
+                  <p class="border-r pr-4">2BD</p>
+                  <p class="border-r pr-4">2BA</p>
+                  <p>930SF</p>
+              </div>
+          </div>
+      </div>
+      <div class="relative"><img src="img/eco-3.webp" alt="">
+          <div class="absolute  bottom-0 text-white">
+              <div class="ml-10  font-semibold text-[1.3rem]">
+                  <p>$35.000</p>
+              </div>
+              <div class=" ml-10">
+                  <p class="font-light ">Colourful Little Apartment</p>
+              </div>
+              <div class="flex gap-4 ml-10 mb-4">
+                  <p class="border-r pr-4">2BD</p>
+                  <p class="border-r pr-4">2BA</p>
+                  <p>930SF</p>
+              </div>
+          </div>
+      </div>
+     </div>
+          
+
+     <div class="grid md:grid-cols-3 grid-cols-1 py-6 gap-6">
+      <div class="relative"><img src="img/eco-4.webp" alt="">
+          <div class="absolute  bottom-0 text-white">
+              <div class="ml-10  font-semibold text-[1.3rem]">
+                  <p>$35.000</p>
+              </div>
+              <div class=" ml-10">
+                  <p class="font-light ">Colourful Little Apartment</p>
+              </div>
+              <div class="flex gap-4 ml-10 mb-4">
+                  <p class="border-r pr-4">2BD</p>
+                  <p class="border-r pr-4">2BA</p>
+                  <p>930SF</p>
+              </div>
+          </div>
+      </div>
+      <div class="relative"><img src="img/eco-4.webp" alt="">
+            <div class="absolute  bottom-0 text-white">
+              <div class="ml-10  font-semibold text-[1.3rem]">
+                  <p>$35.000</p>
+              </div>
+              <div class=" ml-10">
+                  <p class="font-light ">Colourful Little Apartment</p>
+              </div>
+              <div class="flex gap-4 ml-10 mb-4">
+                  <p class="border-r pr-4">2BD</p>
+                  <p class="border-r pr-4">2BA</p>
+                  <p>930SF</p>
+              </div>
+          </div>
+      </div>
+      <div class="relative"><img src="img/eco-4.webp" alt="">
+          <div class="absolute  bottom-0 text-white">
+              <div class="ml-10  font-semibold text-[1.3rem]">
+                  <p>$35.000</p>
+              </div>
+              <div class=" ml-10">
+                  <p class="font-light ">Colourful Little Apartment</p>
+              </div>
+              <div class="flex gap-4 ml-10 mb-4">
+                  <p class="border-r pr-4">2BD</p>
+                  <p class="border-r pr-4">2BA</p>
+                  <p>930SF</p>
+              </div>
+          </div>
+      </div>
+     </div>
+          
+
+  </div>
+
+  </div>
+</section>
+ <!-- stop -->
+<!--  -->
+ 
+
+<div class="flex items-center text-3xl justify-center py-4 md:py-8  flex-wrap">
+  <p class="m-5">Our Property</p>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="relative group">
+        <img class="h-auto max-w-full rounded-lg" src="img/667a140a8a13b1661d6ff38738851cca.jpg" alt="">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+          <span class="text-white text-lg font-bold">$100</span>
+          <span class="text-white text-sm">New York, Nigria</span>
+      </div>
+    </div>
+    <div class="relative group">
+        <img class="h-auto max-w-full rounded-lg" src="img/bunglow-01.webp" alt="">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+          <span class="text-white text-lg font-bold">#450,000</span>
+          <span class="text-white text-sm">Jos,Nigria</span>
+      </div>
+    </div>
+    <div class="relative group">
+        <img class="md:h-72 h-auto max-w-full rounded-lg" src="img/property-img-1.jpg" alt="">
+        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+          <span class="text-white text-lg font-bold">#1.5m</span>
+          <span class="text-white text-sm">MainLand, Nigria</span>
+      </div>
+    </div>
+    <!-- Add more images similarly -->
+
+<!--  -->
+<div class="relative group">
+  <img class="h-auto max-w-full rounded-lg" src="img/WhatsApp .jpg" alt="">
+  <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+    <span class="text-white text-lg font-bold">#1m</span>
+    <span class="text-white text-sm">PortHarcourt, Nigria</span>
+</div>
+</div>
+<div class="relative group">
+  <img class="md:h-96 h-auto max-w-full rounded-lg" src="img/WhatsApp Image 2024-06-20 at 17.17.03_e5df7bb9.jpg" alt="">
+  <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+    <span class="text-white text-lg font-bold">#600,0000</span>
+    <span class="text-white text-sm">Niger,Nigria</span>
+</div>
+</div>
+<div class="relative group">
+  <img class="md:h-96 h-auto max-w-full rounded-lg" src="img/house_nice-525x328.webp" alt="">
+  <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+    <span class="text-white text-lg font-bold">#300,000</span>
+    <span class="text-white text-sm">Abeokuta,Nigria</span>
+</div>
+</div>
+<div class="relative group">
+  <img class="md:h-96 h-auto max-w-full rounded-lg" src="img/image2.webp" alt="">
+  <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+    <span class="text-white text-lg font-bold">#900,0000</span>
+    <span class="text-white text-sm">Abuja, Nigria</span>
+</div>
+</div>
+<div class="relative group">
+  <img class="md:h-96  h-auto max-w-full rounded-lg" src="img/kitchen-1687121_1280.webp" alt="">
+  <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+    <span class="text-white text-lg font-bold">#100,000</span>
+    <span class="text-white text-sm">Lekki, Nigria</span>
+</div>
+</div>
+<div class="relative group">
+  <img class="md:h-96 h-auto max-w-full rounded-lg" src="img/kitchen1-living-room-4043091_1280.jpg" alt="">
+  <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center rounded-lg">
+    <span class="text-white text-lg font-bold">#400,000</span>
+    <span class="text-white text-sm">Osogbo, Nigria</span>
+</div>
+</div>
+
+
+
+
+</div>
+
+ <!--  -->
+  <!-- Footer -->
+  <footer class="bg-white">
+    <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <div class="text-sm">
+         <p>Ascent Homes</p>
+        </div>
+  
+        <!-- <ul class="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
+          <li>
+        
+              <span class="sr-only">Facebook</span>
+  
+              <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f  hover:text-green-300"></i></a>
+           
+          </li>
+  
+          <li>
+           
+              <span class="sr-only">Instagram</span>
+           <a href=" https://www.instagram.com "><i class="fab fa-instagram  hover:text-green-300"></i></a>   
+          </li>
+  
+          <li>
+            
+              <span class="sr-only">Twitter</span>
+  
+         <a href="
+  
+         https://twitter.com › flow › login"> <i class="fab fa-twitter  hover:text-green-300"></i></a>    
+  
+            
+          </li>
+  
+          <li>
+           
+              <span class="sr-only">GitHub</span>
+              <i class="fab fa-github  hover:text-green-300"></i>
+          </li>
+  
+          <li>
+          
+              <span class="sr-only">Dribbble</span>
+  
+              <i class="fab fa-dribbble  hover:bg-yellow-300"></i>
+           
+          </li>
+        </ul> -->
+      <!-- </div> -->
+<!--   
+      <div
+        class="grid grid-cols-2 gap-8 border-t border-gray-100 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16"
+      >
+        <div>
+          <p class="font-medium text-sm text-gray-900">Services</p>
+  
+          <ul class="mt-6 space-y-4 text-sm">
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
+            </li>
+  
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Company Review </a>
+            </li>
+  
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+            </li>
+  
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
+            </li>
+  
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
+            </li>
+          </ul>
+        </div>
+  
+        <div>
+          <p class="font-medium text-sm text-gray-900">CONTACT INFO</p>
+         <ul class="mt-6 space-y-4 text-sm">
+          <li>
+          <a href="#" class="text-gray-700 transition hover:opacity-75">
+            Call-centre: 07059659531  </a>
+        </li>
+        <li>
+          <a href="#" class="text-gray-700 transition hover:opacity-75">
+            Fax:  07059659531
+            </a>
+        </li>
+        <li>
+          <a href="#" class="text-gray-700 transition hover:opacity-75">
+            Email: liyah.adebayo@gmail.com
+            </a>
+        </li>
+      </ul>
+        </p>
+        </div>
+  
+        <div>
+          <p class="font-medium text-md text-gray-900"> MARKERS</p>
+  
+          <ul class="mt-6 space-y-4 text-sm">
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact </a>
+            </li>
+  
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75">Pricing Plans </a>
+            </li>
+  
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75">About us </a>
+            </li>
+          </ul>
+        </div>
+  
+        <div>
+          <p class="font-medium text-sm text-gray-900">INFORMATION</p>
+  
+          <ul class="mt-6 space-y-4 text-sm">
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Apartment for Rent
+               
+                
+                </a>
+            </li>
+  
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75">  Apartment Low to hide </a>
+            </li>
+  
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75"> Offices for Buy </a>
+            </li>
+  
+            <li>
+              <a href="#" class="text-gray-700 transition hover:opacity-75">  Offices for Rent </a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+  
+      <p class="text-xs text-gray-500">&copy; 2022. Ascent Homes. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/franken-ui-releases@0.0.12/dist/franken-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
